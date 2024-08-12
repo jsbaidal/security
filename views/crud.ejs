@@ -32,6 +32,7 @@
     </head>
     <body>
         <div class="container-xl">
+            <%- include('partials/navbar.ejs') %>
             <div class="table-responsive">
                 <div class="table-wrapper">
                     <div class="table-title">
@@ -130,6 +131,7 @@
         </div>
         <!-- Edit Modal HTML -->
         <div id="addEmployeeModal" class="modal fade">
+            <form method="post" action="/users">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form>
